@@ -42,7 +42,7 @@ export default function Register() {
         email,
       });
       toast.success('Você fez seu cadastro');
-      history.push('/');
+      history.push('/login');
     } catch (err) {
       const errors = get(err, 'response.data.errors', []);
       errors.map((error) => toast.error(error));
